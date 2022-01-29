@@ -1,5 +1,5 @@
 # sudoku
-Playable sudoku puzzle game with a randomly generated board.
+Playable sudoku puzzle game with a randomly generated board. Easy difficulty.
 
 The Sudoku class is the main class and it allows the user to play the game.
 
