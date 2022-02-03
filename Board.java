@@ -42,7 +42,7 @@ public class Board {
 
     /**
      * Description: Returns the solved board in String form.
-     * Pre-Condition: The solved board must be a 9 by 9 2D array.
+     * Pre-Condition: None.
      * Post-Condition: A String is returned.
      */
     public String getSolvedBoard() {
@@ -70,7 +70,7 @@ public class Board {
 
     /**
      * Description: Returns the unsolved board in String form.
-     * Pre-Condition: The unsolved board must be a 9 by 9 2D array.
+     * Pre-Condition: None.
      * Post-Condition: A String is returned.
      */
     public String getUnsolvedBoard() {
@@ -125,7 +125,7 @@ public class Board {
 
     /**
      * Description: Checks to see if the unsolved board is solved.
-     * Pre-Condition: Unsolved board and solved board must both be 9 by 9 2D arrays.
+     * Pre-Condition: None.
      * Post-Condition: If the unsolved board is the same as the solved board, true is returned. Otherwise, false is returned.
      */
     public boolean isSolved() {
@@ -241,7 +241,7 @@ public class Board {
 
     /**
      * Description: Randomly generates valid values for the solved board.
-     * Pre-Condition: The solved board must be a 9 by 9 2D array.
+     * Pre-Condition: None.
      * Post-Condition: The values of the solved board are changed to those of a solved sudoku board.
      */
     private void generateSolvedBoard() {
@@ -423,7 +423,7 @@ public class Board {
 
     /**
      * Description: Randomly removes values from the solved board to create an unsolved sudoku board with only 1 solution.
-     * Pre-Condition: The solved board and unsolved board must both be a 9 by 9 2D array.
+     * Pre-Condition: None.
      * Post-Condition: The values of the unsolved board are changed to those of a solvable sudoku board.
      */
     private void generateUnsolvedBoard() {
