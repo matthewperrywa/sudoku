@@ -11,9 +11,9 @@ public class Board {
     private int[][] unsolvedBoard;
 
     /**
-     * Description: Constructs a board with both an unsolved and a solved version.
+     * Description: Constructs a board.
      * Pre-Condition: None.
-     * Post-Condition: Board is constructed and its solved and unsolved states are created.
+     * Post-Condition: Board is constructed and its solved and unsolved states are set.
      */
     public Board() {
         this.solvedBoard = new int[9][9];
@@ -43,7 +43,7 @@ public class Board {
     /**
      * Description: Returns the solved board in String form.
      * Pre-Condition: None.
-     * Post-Condition: A String is returned.
+     * Post-Condition: None.
      */
     public String getSolvedBoard() {
         String output = "";
@@ -71,7 +71,7 @@ public class Board {
     /**
      * Description: Returns the unsolved board in String form.
      * Pre-Condition: None.
-     * Post-Condition: A String is returned.
+     * Post-Condition: None.
      */
     public String getUnsolvedBoard() {
         String output = "";
@@ -104,7 +104,7 @@ public class Board {
     /**
      * Description: Compares coordinates with a number value to coordinates on solved board.
      *              If the numbers match, the unsolved board's number for those coordinates is updated to the that number.
-     * Pre-Condition: The 3 parameters (row, column, number) must be ints.
+     * Pre-Condition: The row, column, and number must all be between 1 and 9.
      * Post-Condition: If the numbers match, true is returned and unsolved board is updated. Otherwise, false is returned.
      */
     public boolean solve(int row, int column, int number) {
@@ -124,9 +124,9 @@ public class Board {
     }
 
     /**
-     * Description: Checks to see if the unsolved board is solved.
+     * Description: Checks to see if the unsolved board is solved. If so, true is returned. False is returned otherwise.
      * Pre-Condition: None.
-     * Post-Condition: If the unsolved board is the same as the solved board, true is returned. Otherwise, false is returned.
+     * Post-Condition: None.
      */
     public boolean isSolved() {
         boolean solved = false;
